@@ -3,6 +3,7 @@ import config
 
 
 def initialization():
+    print('---- Log initialization ----')
     if not os.path.exists(config.log_dir):
         os.makedirs(config.log_dir)
     with open(os.path.join(config.log_dir, 'log.txt'), 'w') as file:
